@@ -17,7 +17,7 @@ public class TohWebMvcConfiguerAdapter extends WebMvcConfigurerAdapter{
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         super.addResourceHandlers(registry);
-        if (!registry.hasMappingForPattern("/wmsWeb/**")) {
+        if (!registry.hasMappingForPattern("/tohWebUi/**")) {
             ResourceHandlerRegistration tohWebUiResourceHandler = registry.addResourceHandler("/tohWebUi/**");
 
             String explodedPath = System.getProperty(EXPLODED_PATH_KEY);
