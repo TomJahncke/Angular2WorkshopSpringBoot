@@ -33,9 +33,4 @@ public class TohWebMvcConfiguerAdapter extends WebMvcConfigurerAdapter{
 
         }
     }
-
-    @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addRedirectViewController("/", "/tohWebUi/index.html");
-    }
 }
